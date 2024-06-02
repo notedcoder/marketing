@@ -149,10 +149,9 @@ opacity: 1;
 #first{
     position: absolute;
     top: 1271px;
-left: 10%;
-width: 30%;
+    left: 375px;
+    width: 370px;
 height: 526px;
-/* UI Properties */
 background: transparent url('1.png') 0% 0% no-repeat padding-box;
 opacity: 1;
 }
@@ -160,8 +159,8 @@ opacity: 1;
 #second{
     position: absolute;
     top: 1271px;
-    left: 40%;
-width: 30%;
+    left: 775px;
+width: 370px;
 height: 526px;
 background: transparent url('2.png') 0% 0% no-repeat padding-box;
 opacity: 1;
