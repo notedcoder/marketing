@@ -8,6 +8,10 @@ html,body{
     width: 100%;
     height: 100%;
 }
+h1{
+    color: #FF3147;
+}
+
 
 #main{
     width: 100%;
@@ -31,7 +35,7 @@ html,body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15vh 0 10vh 5vw;
+    padding: 20vh 0 10vh 5vw;
 
  }
 #award{
@@ -78,10 +82,14 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    background: #f36c7a;
+}
+
 #page_1-image{
     width: 40vw;
     height: 800px;
-    background: transparent url('hero.png') 0% 0% no-repeat padding-box; ;
+    background: transparent url('images/hero.png') 0% 0% no-repeat padding-box; ;
     border-color: #FF3147;
     opacity: 1;
 }
@@ -115,7 +123,7 @@ button{
 }
 
 .submit-btn{
-    margin-top: 10px;
+    margin-top: 100px;
     margin-left: 180px;
     justify-content: center;
 }
@@ -127,6 +135,9 @@ button{
     position: absolute;
     top:-15px;
     right: -15px;
+    background-color: white;
+    /* opacity: 0.5; */
+    border-radius: 50%;
 }
 
 #page_2{
@@ -211,12 +222,12 @@ button{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #ff3146d6;
+    background-color: #ff3146;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20% 0%;
-    transition: 2s;
+    transition: 2s ease;
 }
 .image-item-body .p1{
     text-align: center;
@@ -313,7 +324,7 @@ button{
     width: 20vw;
     height: 72px;
     margin-bottom: 2vh;
-    background: transparent url('asset1.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/asset1.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #asset1-2{
@@ -348,7 +359,7 @@ button{
     width:20vw;
     height: 65px;
     margin-bottom: 2vh;
-    background: transparent url('asset2.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/asset2.png') 0% 0% no-repeat padding-box;
     opacity: 1;    
 }
 #asset2-2{
@@ -383,7 +394,7 @@ button{
     width: 20vw;
     height: 75px;
     margin-bottom: 2vh;
-    background: transparent url('asset3.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/asset3.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #asset3-2{
@@ -418,7 +429,7 @@ button{
     width: 20vw;
     height: 70px;
     margin-bottom: 2vh;
-    background: transparent url('asset4.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/asset4.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #asset4-2{
@@ -480,11 +491,9 @@ button{
 }
 
 
-#menu .section #images{
-    width: 40vw;
-    height: 567px;
-    background: transparent url('image.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+.image-page4{
+    width: 100%;
+    height: 100%;
 }
 
 #menu .section #text{
@@ -657,7 +666,7 @@ button{
     width: 4vw;
     height: 34px;
     align-items: center;
-    background: transparent url('heart (2).png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/heart (2).png') 0% 0% no-repeat padding-box;
     opacity: 1; 
 }
 
@@ -697,7 +706,7 @@ button{
 #second-1{
     width: 4vw;
     height: 34px;
-    background: transparent url('clock.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/clock.png') 0% 0% no-repeat padding-box;
     opacity: 1; 
 }
 
@@ -738,7 +747,7 @@ button{
 #third-1{
     width: 4vw;
     height: 34px;
-    background: transparent url('Path\ 4402.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/Path\ 4402.png') 0% 0% no-repeat padding-box;
     opacity: 1; 
 }
 
@@ -778,7 +787,7 @@ button{
 #fourth-1{
     width: 4vw;
     height: 34px;
-    background: transparent url('Path\ 4406.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/Path\ 4406.png') 0% 0% no-repeat padding-box;
     opacity: 1; 
 }
 
@@ -866,16 +875,28 @@ button{
 
 .footer{
     width: 100vw;
-    background: transparent url('NoPath\ -\ Copy.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/NoPath\ -\ Copy.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #logo{
-    width: 60vw;
+    width: 80vw;
     margin-top: 5vh;
-    margin-left: 20vw;
+    margin-left: 5vw;
     margin-bottom: 5vh;
-    margin-right: 10vw;
+    margin-right: 0vw;
     height: 56px;
-    background: transparent url(Group\ 500.png) 0% 0% no-repeat padding-box;
+    background: transparent url('images/Group\ 500.png') 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+
+/*  */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(196, 172, 172);
 }

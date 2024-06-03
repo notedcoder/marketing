@@ -1,11 +1,17 @@
-console.log(document.getElementById("contact-button"))
+
 document.getElementById("contact-button").addEventListener("click", function(){
   
   document.querySelector(".popup").style.display = "flex"; 
+
+  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+
+  // document.getElementsByTagName('body')[0].style.overflow = 'visible'
 });
 
 document.querySelector(".close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none"; 
+  document.getElementsByTagName('body')[0].style.overflow = 'visible'
+
 })
 
 
@@ -28,24 +34,37 @@ document.querySelector(".submit-btn").addEventListener("click",function(){
   })
 
   document.querySelector(".popup").style.display = "none";
+  document.getElementsByTagName('body')[0].style.overflow = 'visible'
+
 })
 
 document.getElementById("text-1").addEventListener("click", function(){
-  document.getElementById("image-select").setAttribute("src", "image.png");
+  document.getElementById("image-select").setAttribute("src", "images/image.png");
   // console.log(document.getElementById("image-select"));
 
 })
 document.getElementById("text-2").addEventListener("click", function(){
-  document.getElementById("image-select").setAttribute("src", "fruits2.png");
+  document.getElementById("image-select").setAttribute("src", "images/fruits3.jpg");
   // console.log(document.getElementById("image-select"));
 
 })
 document.getElementById("text-3").addEventListener("click", function(){
-  document.getElementById("image-select").setAttribute("src", "fruits4.png");
+  document.getElementById("image-select").setAttribute("src", "images/foots.jpg");
   // console.log(document.getElementById("image-select"));
 
 })
 
-document.getElementsByClassName("b").addEventListener("click", function(){
-  window.location.href= "https://www.fylehq.com/";
-})
+
+
+
+let arr = document.getElementsByClassName("b")
+console.log(arr);
+
+for(let i = 0; i < arr.length; i++){
+  arr[i].addEventListener("click",function(){
+    // console.log("njnr");
+    // window.location.replace("https://www.youtube.com/watch?v=xO-bV5aAd-U&ab_channel=CodingArtist");
+    window.open("https://www.fylehq.com", "_blank");
+  })
+  
+}
